@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.infobip.spring.xml.repository.InMemoryActorRepository" id="actorRepository" />
+    <bean class="org.infobip.spring.xml.repository.InMemoryMovieRepository" id="movieRepository" />
+
+    <bean class="org.infobip.spring.xml.service.CinemaServiceImpl" id="cinemaService">
+        <constructor-arg name="movieRepository" ref="movieRepository" />
+        <constructor-arg name="actorRepository" ref="actorRepository" />
+    </bean>
+
+    <bean class="org.infobip.spring.xml.domain.Actor" id="actor1">
+        <property name="id" value="1" />
+        <property name="firstName" value="Brad" />
+        <property name="lastName" value="Pitt" />
+    </bean>
+
+    <bean class="org.infobip.spring.xml.domain.Actor" id="actor2">
+        <property name="id" value="2" />
+        <property name="firstName" value="Edward" />
+        <property name="lastName" value="Norton" />
+    </bean>
+
+    <bean class="org.infobip.spring.xml.domain.Movie" id="movie2">
+        <property name="id" value="1" />
+        <property name="title" value="Zodiac" />
+        <property name="duration" value="157" />
+        <property name="actors">
+            <set>
+                <ref bean="actor1" />
+            </set>
+        </property>
+    </bean>
+
+    <bean class="org.infobip.spring.xml.domain.Movie" id="movie1">
+        <property name="id" value="2" />
+        <property name="title" value="Fight Club" />
+        <property name="duration" value="139" />
+        <property name="actors">
+            <set>
+                <ref bean="actor1" />
+                <ref bean="actor2" />
+            </set>
+        </property>
+    </bean>
+
+</beans>
