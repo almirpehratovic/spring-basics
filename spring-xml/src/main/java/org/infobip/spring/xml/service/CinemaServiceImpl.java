@@ -1,6 +1,5 @@
 package org.infobip.spring.xml.service;
 
-
 import org.infobip.spring.xml.domain.Actor;
 import org.infobip.spring.xml.domain.Movie;
 import org.infobip.spring.xml.repository.ActorRepository;

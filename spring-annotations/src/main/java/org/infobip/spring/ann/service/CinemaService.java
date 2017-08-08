@@ -1,9 +1,7 @@
-package org.infobip.spring.boot.service;
+package org.infobip.spring.ann.service;
 
-
-
-import org.infobip.spring.boot.domain.Actor;
-import org.infobip.spring.boot.domain.Movie;
+import org.infobip.spring.ann.domain.Actor;
+import org.infobip.spring.ann.domain.Movie;
 
 import java.util.Set;
 

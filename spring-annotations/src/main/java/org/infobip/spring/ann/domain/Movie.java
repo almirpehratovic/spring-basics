@@ -1,4 +1,4 @@
-package org.infobip.spring.java.domain;
+package org.infobip.spring.ann.domain;
 
 
 import lombok.AllArgsConstructor;

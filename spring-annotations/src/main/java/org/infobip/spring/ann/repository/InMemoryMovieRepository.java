@@ -1,13 +1,13 @@
-package org.infobip.spring.boot.repository;
+package org.infobip.spring.ann.repository;
 
-import org.infobip.spring.boot.domain.Movie;
+import org.infobip.spring.ann.domain.Movie;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-//@Repository
+@Repository
 public class InMemoryMovieRepository implements MovieRepository {
     private Set<Movie> movieDatabase = new HashSet<>();
 

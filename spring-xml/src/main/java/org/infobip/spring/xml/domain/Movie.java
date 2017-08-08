@@ -13,8 +13,8 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Movie {
-    private int id;                 // unique identifier
-    private String title;           // original title
-    private int duration;           // duration of movie in minutes
-    private Set<Actor> actors;      // main set of actors
+    private int id;
+    private String title;
+    private int duration;
+    private Set<Actor> actors;
 }

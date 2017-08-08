@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.infobip.spring.xml.repository.InMemoryActorRepository" id="actorRepository" />
+    <bean class="org.infobip.spring.xml.repository.InMemoryActorRepository" id="actorRepository" scope="prototype"/>
     <bean class="org.infobip.spring.xml.repository.InMemoryMovieRepository" id="movieRepository" />
 
     <bean class="org.infobip.spring.xml.service.CinemaServiceImpl" id="cinemaService">

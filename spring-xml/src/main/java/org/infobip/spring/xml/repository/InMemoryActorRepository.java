@@ -1,7 +1,5 @@
 package org.infobip.spring.xml.repository;
 
-
-
 import org.infobip.spring.xml.domain.Actor;
 
 import java.util.HashSet;

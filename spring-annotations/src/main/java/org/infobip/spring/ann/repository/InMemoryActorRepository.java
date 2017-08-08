@@ -1,14 +1,13 @@
-package org.infobip.spring.boot.repository;
+package org.infobip.spring.ann.repository;
 
-
-
-import org.infobip.spring.boot.domain.Actor;
+import org.infobip.spring.ann.domain.Actor;
+import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-//@Component
+@Component
 public class InMemoryActorRepository implements ActorRepository{
     private Set<Actor> actorsDatabase = new HashSet<Actor>();
 

@@ -1,4 +1,4 @@
-package org.infobip.spring.boot.domain;
+package org.infobip.spring.ann.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Actor {
-    private int id;                 // unique identification
+    private int id;
     private String firstName;
     private String lastName;
 }

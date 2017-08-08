@@ -1,7 +1,7 @@
-package org.infobip.spring.boot.repository;
+package org.infobip.spring.ann.repository;
 
 
-import org.infobip.spring.boot.domain.Actor;
+import org.infobip.spring.ann.domain.Actor;
 
 import java.util.Set;
 

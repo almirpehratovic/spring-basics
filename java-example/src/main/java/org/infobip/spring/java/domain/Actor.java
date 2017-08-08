@@ -5,14 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.Set;
-
 @Data
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 public class Actor {
-    private int id;                 // unique identification
+    private int id;
     private String firstName;
     private String lastName;
 }

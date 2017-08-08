@@ -1,6 +1,6 @@
-package org.infobip.spring.boot.repository;
+package org.infobip.spring.ann.repository;
 
-import org.infobip.spring.boot.domain.Movie;
+import org.infobip.spring.ann.domain.Movie;
 
 import java.util.Set;
 
